@@ -51,8 +51,9 @@ nav a:hover{
   z-index: 1;
 
   /*Your code here*/
-  position: absolute;
   top: -40px;
+  position: absolute;
+  
 }
 
 /*Your Code Here*/
@@ -60,6 +61,7 @@ nav a:hover{
 
 .skip a:focus{
   top: 0px;
+  position: static;
 }
 
 /*Your Code Here*/
@@ -180,11 +182,11 @@ background-color: rgba(255, 255, 255, .8);
 
   .about, .clients, .method-image, .contact-image{
     /*Your code here:*/
-    grid-column: 3 / -1;
+    grid-column: 3 / span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
-    grid-column: 2 / 4;
+    grid-column: 2 / span 2;
   }
 }
 
